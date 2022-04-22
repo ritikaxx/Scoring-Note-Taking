@@ -1,0 +1,53 @@
+<head>
+  <link rel="stylesheet" href="./static/result.css">
+</head>
+<section>
+    <!--for demo wrap-->
+    <h1>RESULT</h1>
+    <div class="tbl-header">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>location</th>
+
+          </tr>
+        </thead>
+      </table>
+    </div>
+    <div class="tbl-content">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tbody style="font-size:large">
+
+          <tr>
+            <td>00016_000</td>
+            <td>696 724</td>
+ 
+          </tr>
+          <tr>
+            <td>00016_001</td>
+            <td>668 693</td>
+   
+          </tr>
+          <tr>
+            <td>00016_002</td>
+            <td>203 217</td>
+
+          </tr>
+          <tr>
+            <td>00016_003</td>
+            <td>70 91</td>
+   
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <script>
+
+$(window).on("load resize ", function() {
+  var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
+  $('.tbl-header').css({'padding-right':scrollWidth});
+}).resize();
+  </script>
