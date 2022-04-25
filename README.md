@@ -17,3 +17,15 @@ Another objective is combining multiple text segments or sentences having ambigu
 
 
 We will be developing a full software solution in which the input will be in the form of a csv file uploaded by the trained physicians and the output will be the mapped feature and the particular locations of the part of the notes implying the annotations for scoring the candidates.
+
+
+## RUN ON LOCALHOST
+
+Install dependencies-
+
+    pip install -r requirements.txt
+    
+Run the flask app
+
+    python main.py
+    
