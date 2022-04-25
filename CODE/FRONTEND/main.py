@@ -1,20 +1,9 @@
-import time
-import os
-import torch
 from flask import Flask, render_template, request, redirect, session, url_for, flash
-from ast import literal_eval
-from itertools import chain
 import numpy as np
 import pandas as pd
-import torch
-import torch.nn as nn
-from sklearn.metrics import precision_recall_fscore_support
-from sklearn.model_selection import train_test_split
-from torch import optim
 from torch.utils.data import DataLoader
 from torch.utils.data import Dataset
-from tqdm.notebook import tqdm
-from transformers import AutoModel, AutoTokenizer, RobertaTokenizerFast, RobertaModel
+from transformers import RobertaTokenizerFast
 
 app = Flask(__name__)
 BASE_URL = "../input/nbme-score-clinical-patient-notes"
